@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <title>No JS</title>
+    <head>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="Styles/target.css">
+        <link rel="stylesheet" href="Styles/accordion.css">
+        <link rel="stylesheet" href="Styles/nesting.css">
+        <link rel="stylesheet" href="Styles/range.css">
+        <link rel="stylesheet" href="Styles/testimonials.css">
+        <link rel="stylesheet" href="Styles/toggle.css">
+        <link rel="stylesheet" href="Styles/carousel.css">
+    </head>
+    <body>
+        <header>
+            <p>
+                <img src="img/logo.png"/>
+                <h1 class="top-title">طراحی وب سایت بدون جاوا اسکریپت</h1>
+            </p>
+            <p class="top-menu">
+                <a href="#main">صفحه اصلی</a>
+                <a href="#accordion">آکاردئون</a>
+                <a href="#validations">اعتبارسنجی</a>
+                <a href="#nesting">Nesting</a>
+                <a href="#range-slider">Range Slider</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#toggle">Toggle</a>
+                <a href="#carousel">Carousel</a>
+            </p>
+        </header>
+        <main>
+            <section id="main">
+                صفحه اصلی
+            </section>
+            <section id="accordion">
+                <details>
+                    <summary>این یک بخش قابل کلیک کشویی می باشد</summary>
+                    <p>این متن در ابتدا مخفی بوده ولی بعد از کلیک
+                         می توان آن را به نمایش درآورد
+                    </p>
+                </details>
+                <details>
+                    <summary>این یک بخش قابل کلیک کشویی می باشد</summary>
+                    <p>این متن در ابتدا مخفی بوده ولی بعد از کلیک
+                         می توان آن را به نمایش درآورد
+                    </p>
+                </details>
+                <details>
+                    <summary>این یک بخش قابل کلیک کشویی می باشد</summary>
+                    <p>این متن در ابتدا مخفی بوده ولی بعد از کلیک
+                         می توان آن را به نمایش درآورد
+                    </p>
+                </details>
+            </section>
+            <section id="validations">
+                <form>
+                    <label for="name">نام</label>
+                    <input type="text" id="name" id="name" required/><br/><br/>
+                    <label for="date">تاریخ</label>
+                    <input type="date" id="date" name="date" required><br/><br/>
+                    <label for="phone">تلفن</label>
+                    <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"/><br/><br/>
+
+                    <br/><br/>
+                    <button type="submit" >ارسال</button>
+                </form>
+            </section>
+            <section id="nesting">
+                <div>
+                    <p>تست</p>
+                </div>
+            </section>
+            <section id="range-slider">
+                <br>
+                <form>
+                    <label for="js_rating">چقدر به جاوا اسکریپت علاقه دارید؟</label>
+                    <input type="range" id="js_rating" name="js" min="0"
+                    max="10" step="2" list="js_skills">
+                    <datalist id="js_skills">
+                        <option value="0">قبلا استفاده نکردم</option>
+                        <option value="2">چند بار استفاده کردم</option>
+                        <option value="4">میشه ازش استفاده کرد</option>
+                        <option value="6">تا وقتی کار می کنه خوبه</option>
+                        <option value="8">منظم استفاده می کنم</option>
+                        <option value="10">برای هر چیزی استفاده می کنم</option>
+                    </datalist>
+                </form>
+            </section>
+            <section id="testimonial" >
+                <br><br>
+                <div class="testinomials"> 
+                    <input type="radio" id="t_1"  name="testinomials"/>
+                    <label for="t_1">تیتر اول</label>
+                    <blockquote>
+                        این یک متن آزمایشی اول است
+                    </blockquote>
+
+                    <input type="radio" id="t_2" name="testinomials"/>
+                    <label for="t_2">تیتر دوم</label>
+                    <blockquote>
+                        این یک متن آزمایشی دوم است
+                    </blockquote>
+
+                    <input type="radio" id="t_3" name="testinomials"/>
+                    <label for="t_3">تیتر سوم</label>
+                    <blockquote>
+                        این یک متن آزمایشی سوم است
+                    </blockquote>
+
+                    <input type="radio" id="t_4" name="testinomials"/>
+                    <label for="t_4">تیتر چهارم</label>
+                    <blockquote>
+                        این یک متن آزمایشی چهارم است
+                    </blockquote>
+
+                    <input type="radio" id="t_5" name="testinomials"/>
+                    <label for="t_5">تیتر پنجم</label>
+                    <blockquote>
+                        این یک متن آزمایشی پنجم است
+                    </blockquote>
+            </div>
+            </section>
+            <section id="toggle">
+                <br><br>
+                <div class="toggle">
+                    <input id="off" type="radio" 
+                    name="switch" value="off" checked/>
+                    <label for="off">خاموش</label>
+
+                    <input id="on" type="radio"
+                    name="switch" value="on"/>
+                    <label for="on">روشن</label>
+                    
+                    <span class="switch"></span>
+                </div>
+            </section>
+            <section id="carousel">
+                <div class="carousel">
+                    <input type="radio" name="images" 
+                    value="i_1" id="img_1" checked/>
+                    <label for="img_1">Image 1</label>
+                    <div class="image">
+                        <img src="img/img_1.jpg" alt=""/>
+                    </div>
+
+                    <input type="radio" name="images" 
+                    value="i_2" id="img_2" checked/>
+                    <label for="img_2">Image 2</label>
+                    <div class="image">
+                        <img src="img/img_2.jpg" alt=""/>
+                    </div>
+
+                    <input type="radio" name="images" 
+                    value="i_3" id="img_3" checked/>
+                    <label for="img_3">Image 3</label>
+                    <div class="image">
+                        <img src="img/img_3.jpg" alt=""/>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;محمد فوتمی</p>
+            <p>این وب سایت از هیچ کد جاواسکریپتی استفاده نکرده است</p>
+        </p>
+    </body>
+</html>

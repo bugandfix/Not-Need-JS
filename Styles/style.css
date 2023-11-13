@@ -1,0 +1,38 @@
+@import url('../fonts/vazirmatn-v33.003/vazirmatn-font-face.css');
+@import url('../fonts/vazirmatn-v33.003/vazirmatn-variable-font-face.css');
+@import url('../fonts/vazirmatn-v33.003/round-dots/vazirmatn-rd-font-face.css');
+
+html,body,*{
+    direction: rtl;
+    font-family: Vazirmatn;
+}
+main{
+    min-height: 500px;
+}
+header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header img{
+    width: 150px;
+    padding: 10px;
+    float: right;
+}
+header .top-title{
+    margin-top: 50px;
+    float: right;
+}
+header .top-menu{
+    padding: 10px;
+    clear: both;
+}
+header .top-menu a{
+    padding: 10px;
+   font-size: 20;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+footer{
+    padding: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2), 0px 0px 20px 6px rgba(0, 0, 0, 0.19);
+}
